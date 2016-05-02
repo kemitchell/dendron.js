@@ -1,0 +1,11 @@
+{
+  "name": "dendron",
+  "version": "0.0.0",
+  "description": "parse plain-text maps and lists of strings",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/dendron.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
