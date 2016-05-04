@@ -3,16 +3,16 @@ var parse = require('./')
 
 assert.deepEqual(
   parse(
-    [ 'a',
-      '  b',
-      '  c' ]
+    [ 'a=',
+      '  - b',
+      '  - c' ]
       .join('\n')),
-  { a: { b: { }, c: { } } })
+  { a: [ 'b', 'c' ] })
 
 assert.deepEqual(
   parse(
-    [ 'a',
-      '  b',
-      '    c' ]
+    [ 'a=',
+      '  b=',
+      '    - c' ]
       .join('\n')),
-  { a: { b: { c: { } } } })
+  { a: { b: [ 'c' ] } })
